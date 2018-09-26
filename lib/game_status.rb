@@ -22,3 +22,4 @@ def won?(board)
     position_taken?(board,win_combintation[0])
   end 
 end
+
