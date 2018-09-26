@@ -30,3 +30,9 @@ end
 def draw?(board)
   full?(board) && !won?(board)
 end 
+
+def over?(board)
+  if win_combintation = won?(board)
+    board[win_combintation.first]
+  end 
+end
