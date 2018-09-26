@@ -32,7 +32,5 @@ def draw?(board)
 end 
 
 def over?(board)
-  if win_combintation = won?(board)
-    board[win_combintation.first]
-  end 
+  won?(board) || full?(board) 
 end
